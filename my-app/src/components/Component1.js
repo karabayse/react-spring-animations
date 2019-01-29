@@ -12,6 +12,19 @@ export default function Component1() {
         <div style={c1Style}>
           <h1>Component 1</h1>
           <p>First Paragraph</p>
+          <Spring
+            from={{number: 0}}
+            to={{number: 10}}
+            config={{duration: 10000}}
+          >
+            {props => (
+              <div style={props}>
+                <h1 style={counter}>
+                  {props.number.toFixed}
+                </h1>
+              </div>
+            )}
+          </Spring>
         </div>
         </div>
       )}
@@ -23,4 +36,12 @@ const c1Style = {
   background: '#36648B',
   color: '#FFF',
   padding: '1.5rem'
+}
+
+const counter = {
+  background: '#333',
+  textAlign: 'center',
+  width: '100px',
+  borderRadius: '50%',
+  margin: '1rem auto'
 }
