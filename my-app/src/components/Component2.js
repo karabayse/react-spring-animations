@@ -13,7 +13,8 @@ export class Component2 extends Component {
             <div style={props}>
             <div style={c2Style}>
               <h1>Component 2</h1>
-              <p>First Paragraph</p>
+              <p>Component 2 paragraph</p>
+              <button style={btn} onClick={this.props.toggle}>Toggle Component 3</button>
             </div>
             </div>
           )}
@@ -26,6 +27,15 @@ const c2Style = {
   background: 'slateblue',
   color: '#FFF',
   padding: '1.5rem'
+}
+
+const btn = {
+  background: '#333'
+  color: '#FFF'
+  padding: '1rem 2rem'
+  border: 'none'
+  textTransform: 'uppercase'
+  margin: '15px 0'
 }
 
 export default Component2

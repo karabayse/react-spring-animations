@@ -13,6 +13,7 @@ class App extends Component {
       <div className="App">
           <Component1 />
           <Component2 />
+          <Component3 />
       </div>
     );
   }
