@@ -4,6 +4,9 @@ import Component2 from './components/Component2';
 import './App.css';
 
 class App extends Component {
+  state = {
+    showComponent3: false
+  }
   render() {
     return (
       <div className="App">
