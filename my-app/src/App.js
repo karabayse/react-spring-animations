@@ -8,6 +8,9 @@ class App extends Component {
   state = {
     showComponent3: false
   }
+
+toggle = e => this.setState({showComponent3: !this.state.showComponent3});
+
   render() {
     return (
       <div className="App">
