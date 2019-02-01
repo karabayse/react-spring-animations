@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className="App">
           <Component1 />
-          <Component2 />
+          <Component2 toggle={this.toggle}/>
           <Component3 />
       </div>
     );
