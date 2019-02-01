@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Transition, animate } from 'react-spring';
 import Component1 from './components/Component1';
 import Component2 from './components/Component2';
 import Component3 from './components/Component3';
